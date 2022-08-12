@@ -2,7 +2,7 @@
 #include "Digitals.h"
 
 
-Digital::Digital(int pin, bool invert = false, int samples = 20){
+Digital::Digital(int pin, bool invert, int samples){
     _pin = pin;
     _invert = invert;
     _samples =  samples = 20;
@@ -10,7 +10,7 @@ Digital::Digital(int pin, bool invert = false, int samples = 20){
 
 void Digital::begin(){
     if(!_invert){
-        pinMode(_pin, INPUT_PULLDOWN);
+        pinMode(_pin, INPUT);
     }
     else{
         pinMode(_pin, INPUT_PULLUP);

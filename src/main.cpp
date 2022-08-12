@@ -2,9 +2,9 @@
 //SISTEMAS DIGITALES//
 #include <Arduino.h>
 #include "pico/multicore.h"
-#include <StateMachine.h>
-#include <States.cpp>
-#include <Hardware.cpp>
+//#include <StateMachine.h>
+#include <States.h>
+#include <proyectHardware.h>
 
 void setup ()
 {
