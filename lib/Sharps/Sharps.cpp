@@ -2,7 +2,7 @@
 #include "Sharps.h"
 
 
-Sharp::Sharp(int pin, int samples = 20){
+Sharp::Sharp(int pin, int samples){
     _pin = pin;
     _samples =  samples = 20;
 }
