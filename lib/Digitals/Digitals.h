@@ -13,13 +13,11 @@ class Digital{
   public:
     Digital(int pin, bool invert = false, int samples = 20);
     void begin();
-    int getValue();
+    bool getValue();
   private:
     int _pin;
     bool _invert;
     int _samples;
     int _value;
 };
-
-
 #endif
